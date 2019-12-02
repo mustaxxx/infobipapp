@@ -48,7 +48,7 @@
             <form action="nekiprogram.php">
                 <h3 class="fulla">Kriteriji pretrage</h3>
                 <a class="gumb streachcenter fulla" id="prtrazipobrojudoc"href="pobrdoc.html">Pretraži po broju dokumenta</a>
-              <label for="klijent">Klijent</label>
+              <label class="halfa1" for="klijent">Klijent</label>
               <datalist id="klijentdata">
                 <option value="Acme Corporation-1">
                   <option value="Globex Corporation-2">
@@ -75,9 +75,9 @@
                   <option value="Krusty Krab-23">
                   <option value="Good Burger-24">   
               </datalist>
-                <input list="klijentdata" class="nooutline" id="klijentrac" name="klijentrac" type="text"></input>
-                <label for="izdavatelj">Izdavatelj računa</label>
-                <input list="izdavateljdata" class="nooutline" id="izdavatelj" name="izdavatelj"  type="text"></input>
+                <input list="klijentdata" class="nooutline halfa2" id="klijentrac" name="klijentrac" type="text"></input>
+                <label class="halfa1" for="izdavatelj">Izdavatelj računa</label>
+                <input list="izdavateljdata" class="nooutline halfa2" id="izdavatelj" name="izdavatelj"  type="text"></input>
                 <datalist id="izdavateljdata">
                   <option value="Infobip Afghanistan ">
                     <option value="Infobip Albania ">
@@ -136,13 +136,13 @@
                     <option value="Infobip Denmark ">
                     
                 </datalist>
-                <label id="vremenskiperiodlabel" for="vremenskiperiod">Vremenski period izdavanja računa</label>
-                <label for="od">Od:</label>
-                <input class="nooutline" id="dateod" name="dateod" type="date"></input>
-                <label for="do">Do:</label>
-                <input class="nooutline" id="datedo" name="datedo" type="date"></input>
-                <label for="uslugazaizdat">Usluga za koju je izdan račun</label>
-                <input class="nooutline" list="uslugazaizdat" id="usluga" name="usluga"></input>
+                <label class="fulla" id="vremenskiperiodlabel" for="vremenskiperiod">Vremenski period izdavanja računa</label>
+                <label class="halfa1" for="od">Od:</label>
+                <input class="nooutline halfa2" id="dateod" name="dateod" type="date"></input>
+                <label class="halfa1" for="do">Do:</label>
+                <input class="nooutline halfa2" id="datedo" name="datedo" type="date"></input>
+                <label class="halfa1" for="uslugazaizdat">Usluga za koju je izdan račun</label>
+                <input class="nooutline halfa2" list="uslugazaizdat" id="usluga" name="usluga"></input>
                 <datalist id="uslugazaizdat">
                     <option value="SMS">
                     <option value="Voice">
@@ -150,14 +150,14 @@
                     <option value="WhatsApp">
                     <option value="Other">
                   </datalist>
-                <label id="tipracunalabel">Tip računa</label>
-                <input  class="nooutline" type="radio" id="tipracun" name="tipracuna" value="Racun">
-                <label id="tipracunlabel" class="polaa pointer" for="tipracun">Račun</label>
-                <input  class="nooutline" type="radio" id="tippredracun" name="tipracuna" value="Predracun">
-                <label id="tippredracunracunlabel" class="polab pointer" for="tippredracun">Predračun</label>
+                <label class="fulla streachcenter" id="tipracunalabel">Tip računa</label>
+                <input class="nooutline halfa2" type="radio" id="tipracun" name="tipracuna" value="Racun">
+                <label id="tipracunlabel" class="halfa1 streachcenter pointer" for="tipracun">Račun</label>
+                <input  class="nooutline halfa2" type="radio" id="tippredracun" name="tipracuna" value="Predracun">
+                <label id="tippredracunracunlabel" class="halfa2 streachcenter pointer" for="tippredracun">Predračun</label>
                 <span visibility="hidden" id="dots">...</span><section id="more" class="centergrid more sakrij">
-                    <label for="">Valuta</label>
-                    <input class="nooutline" list="valutadata" id="valuta" name="usluga"></input>
+                    <label class="halfa1" for="">Valuta</label>
+                    <input class="nooutline halfa2" list="valutadata" id="valuta" name="usluga"></input>
                     <datalist id="valutadata">
                         <option value="EUR">
                         <option value="GBP">
@@ -165,13 +165,13 @@
                         <option value="USD">
                         <option value="RSD">
                       </datalist>
-                      <label id="vremenskiperiodlabel" for="vremenskiperiod">Iznos:</label>
-                      <label for="od">Min:</label>
-                      <input class="nooutline" id="dateod" name="minamount" type="number"></input>
-                      <label for="do">Max:</label>
-                      <input class="nooutline" id="datedo" name="maxamount" type="number"></input>
-                  <label for="imebanke">Naziv banke</label>
-                    <input list="banke" class="nooutline" id="imebanke" name="banka"  type="text"></input>
+                      <label class="fulla streachcenter"id="vremenskiperiodlabel" for="vremenskiperiod">Iznos:</label>
+                      <label class="halfa1" for="od">Min:</label>
+                      <input class="nooutline halfa2" id="dateod" name="minamount" type="number"></input>
+                      <label  class="halfa1" for="do">Max:</label>
+                      <input class="nooutline halfa2" id="datedo" name="maxamount" type="number"></input>
+                  <label class="halfa1" for="imebanke">Naziv banke</label>
+                    <input list="banke" class="nooutline halfa2" id="imebanke" name="banka"  type="text"></input>
                     <datalist id="banke">
                         <option value="PBZ">
                         <option value="Raiffeisen">
@@ -185,8 +185,8 @@
                         <option value="Druga">
                       </datalist>
                       
-                    <label for="kriterij1">Zakazano za:</label>
-                    <select id="duein" name="duein">
+                    <label class="halfa1" for="kriterij1">Zakazano za:</label>
+                    <select class="halfa2" id="duein" name="duein">
                         <option value="dns">Danas</option>
                         <option value="1530">15-30 dana</option>
                         <option value="3060">30-60 dana</option>
@@ -195,14 +195,14 @@
                         <option value="preko">Preko 120 dana</option>
                       </select>
                    
-                    <label id="tipracunalabel">Plačen?</label>
+                    <label class="fulla" id="tipracunalabel">Plačen?</label>
                 <input  class="nooutline" type="radio" id="tipplacen" name="tipplacen" value="Racun">
-                <label id="tipplacenlabel" class="polaa pointer" for="tipplacen">Da</label>
+                <label id="tipplacenlabel" class="halfa1 streachcenter pointer pointer" for="tipplacen">Da</label>
                 <input  class="nooutline" type="radio" id="tipneplacen" name="tipplacen" value="Predracun">
-                <label id="tipneplacenlabel" class="polab pointer" for="tipneplacen">Ne</label>
+                <label id="tipneplacenlabel" class="halfa2 streachcenter pointer pointer" for="tipneplacen">Ne</label>
                 </section>
                 <button type="button" onclick="prikazivise()" class="nooutline gumb streachcenter fulla" id="myBtn">Više opcija filtriranja</button>
-                <a class="gumb halfa2" href="rezultat.html">Pretraži</a>
+                <a class="gumb fulla justiend" href="rezultat.html">Pretraži</a>
             </form>
         </section>
     </main>
