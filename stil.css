@@ -21,7 +21,7 @@ html{font-size:14px;}
         text-align:center;
         text-align: -webkit-center;
         display: grid;
-        margin:20px;}
+        margin:20px 3px;}
         #logo img{height:100%;
         }
     #naslov{grid-column: span 8;
@@ -105,7 +105,7 @@ html{font-size:14px;}
     grid-column:span 12;}
     .centergrid input{
         padding:10px;
-        margin:20px;
+        margin:20px 3px;
     text-align: center;
     color:#e9530e;
     font-size:1.5em;
@@ -114,7 +114,7 @@ html{font-size:14px;}
     border-bottom:3px solid #e9530e;}
     .centergrid label,#singledoc label{
         padding:10px;
-        margin:20px;
+        margin:20px 3px;
     color:#e9530e;
     font-size:2.2em;
     background:transparent;
@@ -159,7 +159,7 @@ border-right:4px solid #e9530e;}
     .lijevifix h4{
     font-size:1.5em;
     text-align:center;
-    margin:20px 0 5px 0;
+    margin:20px 5px;
 }
 
 #sortbyli input{display:none;}
@@ -181,13 +181,13 @@ border-right:4px solid #e9530e;}
 transition:0.3s;
 background:#e9530e;}
 #orderbyid label.polasort, #orderby label.polasort{width:50%;
-display:inline-block;
+display:block;
 float:left;}
 .floatlsto{width:100%;
 float:left;}
 #orderby label.fullsort{width:100%;
     margin-bottom:50px;
-    display:inline-block;
+    display:block;
     float:left;}
 /*Desni glavni prikaz*/
     .desniflex{grid-column:span 12;
@@ -221,10 +221,16 @@ float:left;}
     }
 
     /*Login*/
-
+    #login.centergrid{
+        margin:0; padding:0;
+        border-radius:0;
+        align-self: stretch;
+    align-content: center;
+      grid-column:span 12;
+    }
     #login input,#brdoc input{
         padding:10px;
-        margin:20px;
+        margin:20px 3px;
     text-align: center;
     color:#e9530e;
     font-size:2.5em;
@@ -254,7 +260,7 @@ float:left;}
     option{background:whitesmoke!important;
         }
     .gumb { display: block;
-            margin: 20px;
+            margin:20px 3px;
             font-family: 'Montserrat', sans-serif;
             background: whitesmoke;
             color: #e9530e;
@@ -286,7 +292,7 @@ float:left;}
     #duein{
         color: #e9530e;
         padding: 10px;
-         margin: 20px;
+         margin:20px 3px;
         background: transparent;
         border: none;
         border-bottom: 3px solid #e9530e;
