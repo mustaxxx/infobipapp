@@ -93,13 +93,14 @@ html{font-size:14px;}
         background: url("img/background.jpg");
         height:calc(100vh - 100px);
     }
-    
-    .centergrid{grid-column: 3/11;
+    .centercentergrid{grid-column: 3/11;
+    display:grid;}
+    .centergrid{grid-column: span 12;
+        align-self: stretch;
+        align-items: center;
+        grid-template-columns: repeat(12,1fr);
         display: grid;
-        margin:50px 0;
-        padding:50px 0;
-    border-radius: 10px;
-    align-self: center;}
+}
     .grid{display: grid;
         grid-template-columns: repeat(12,1fr);
     grid-column:span 12;}
@@ -129,7 +130,7 @@ html{font-size:14px;}
     .centergrid h3{
         font-size: 2.5em;
         text-align: center;
-        padding-bottom:50px;}
+        padding:50px 0;}
    
     
 /*Sortiranje - Lijevi fiksni kod*/
@@ -412,7 +413,7 @@ grid-template-columns: repeat(12, 1fr);}
 
 @media only screen and (max-width: 1024px) {
     html{font-size:13px;}
-    .centergrid{
+    .centercentergrid{
         align-self: stretch;
         align-content: center;
     margin:0;
@@ -428,7 +429,7 @@ grid-template-columns: repeat(12, 1fr);}
 
   @media only screen and (max-width: 768px) {
     html{font-size:11px;}
-    .centergrid{
+    .centercentergrid{
         padding-left:20px;
         padding-right:20px;
         align-self: stretch;
