@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+  <head>
+	<meta name="theme-color" content="#000000">
+	<meta name="msapplication-navbutton-color" content="#000000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Web za zadatak">
+    <meta name="author" content="Dominik Mustać">
+	<link rel="shortcut icon" type="favicon" href="favicon.ico"/>
+    <title>InfoBipApp</title>
+
+    <!-- Fontovi -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link href="stil.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header>
+        
+            <a id="logo" href="pretraga.html">
+            <img src="img/infobip-logo.png" alt="logo"></a>
+                <h2 id="naslov">Pronađeni dokument</h2> 
+                <label id="navbtn" for="navigacija"><i id="barovi" class="fas fa-bars"></i></label>
+                <input id="navigacija" type="checkbox"></input>
+                <nav>
+                    <ul>
+                      <li>
+                        <a href="greska.html">Prijavi grešku</a>
+                      </li>
+                      <li>
+                        <a href="oapp.html">O aplikaciji</a>
+                      </li>
+                      <li id="verzija">
+                            Ver. 0.01
+                    </li>
+                    </ul>
+            </nav>          
+    </header>
+    <main>
+        <section class="centergrid shadow alignstart">
+            <form action="nekiprogram.php">
+                <h3>Kriteriji pretrage</h3>
+                <a class="gumb streachcenter fulla" id="prtrazipobrojudoc"href="pobrdoc.html">Pretraži po broju dokumenta</a>
+              <label for="klijent">Klijent</label>
+              <datalist id="klijentdata">
+                <option value="Acme Corporation-1">
+                  <option value="Globex Corporation-2">
+                  <option value="Soylent Corp-3">
+                  <option value="Initech-4">
+                  <option value="Bluth Company-5">
+                  <option value="Umbrella Corporation-6">
+                  <option value="Hooli-7">
+                  <option value="Vehement Capital Partners-8">
+                  <option value="Massive Dynamic-9">
+                  <option value="Wonka Industries-10">
+                  <option value="Stark Industries-11">
+                  <option value="Gekko & Co-12">
+                  <option value="Wayne Enterprises-13">
+                  <option value="Bubba Gump-14">
+                  <option value="Cyberdyne Systems-15">
+                  <option value="Genco Pura Olive Oil Company-16">
+                  <option value="The New York Inquirer-17">
+                  <option value="Duff Beer-18">
+                  <option value="Olivia Pope & Associates-19">
+                  <option value="Sterling Cooper-20">
+                  <option value="Ollivander's Wand Shop-21">
+                  <option value="Cheers-22">
+                  <option value="Krusty Krab-23">
+                  <option value="Good Burger-24">   
+              </datalist>
+                <input list="klijentdata" class="nooutline" id="klijentrac" name="klijentrac" type="text"></input>
+                <label for="izdavatelj">Izdavatelj računa</label>
+                <input list="izdavateljdata" class="nooutline" id="izdavatelj" name="izdavatelj"  type="text"></input>
+                <datalist id="izdavateljdata">
+                  <option value="Infobip Afghanistan ">
+                    <option value="Infobip Albania ">
+                    <option value="Infobip Algeria ">
+                    <option value="Infobip American Samoa ">
+                    <option value="Infobip Andorra ">
+                    <option value="Infobip Angola ">
+                    <option value="Infobip Anguilla ">
+                    <option value="Infobip Antigua & Barbuda ">
+                    <option value="Infobip Argentina ">
+                    <option value="Infobip Armenia ">
+                    <option value="Infobip Aruba ">
+                    <option value="Infobip Australia ">
+                    <option value="Infobip Austria ">
+                    <option value="Infobip Azerbaijan ">
+                    <option value="Infobip Bahamas">
+                    <option value="Infobip Bahrain ">
+                    <option value="Infobip Bangladesh ">
+                    <option value="Infobip Barbados ">
+                    <option value="Infobip Belarus ">
+                    <option value="Infobip Belgium ">
+                    <option value="Infobip Belize ">
+                    <option value="Infobip Benin ">
+                    <option value="Infobip Bermuda ">
+                    <option value="Infobip Bhutan ">
+                    <option value="Infobip Bolivia ">
+                    <option value="Infobip Bosnia & Herzegovina ">
+                    <option value="Infobip Botswana ">
+                    <option value="Infobip Brazil ">
+                    <option value="Infobip British Virgin Is. ">
+                    <option value="Infobip Brunei ">
+                    <option value="Infobip Bulgaria ">
+                    <option value="Infobip Burkina Faso ">
+                    <option value="Infobip Burma ">
+                    <option value="Infobip Burundi ">
+                    <option value="Infobip Cambodia ">
+                    <option value="Infobip Cameroon ">
+                    <option value="Infobip Canada ">
+                    <option value="Infobip Cape Verde ">
+                    <option value="Infobip Cayman Islands ">
+                    <option value="Infobip Central African Rep. ">
+                    <option value="Infobip Chad ">
+                    <option value="Infobip Chile ">
+                    <option value="Infobip China ">
+                    <option value="Infobip Colombia ">
+                    <option value="Infobip Comoros ">
+                    <option value="Infobip Congo, Dem. Rep. ">
+                    <option value="Infobip Congo, Repub. of the ">
+                    <option value="Infobip Cook Islands ">
+                    <option value="Infobip Costa Rica ">
+                    <option value="Infobip Cote d'Ivoire ">
+                    <option value="Infobip Croatia ">
+                    <option value="Infobip Cuba ">
+                    <option value="Infobip Cyprus ">
+                    <option value="Infobip Czech Republic ">
+                    <option value="Infobip Denmark ">
+                    
+                </datalist>
+                <label id="vremenskiperiodlabel" for="vremenskiperiod">Vremenski period izdavanja računa</label>
+                <label for="od">Od:</label>
+                <input class="nooutline" id="dateod" name="dateod" type="date"></input>
+                <label for="do">Do:</label>
+                <input class="nooutline" id="datedo" name="datedo" type="date"></input>
+                <label for="uslugazaizdat">Usluga za koju je izdan račun</label>
+                <input class="nooutline" list="uslugazaizdat" id="usluga" name="usluga"></input>
+                <datalist id="uslugazaizdat">
+                    <option value="SMS">
+                    <option value="Voice">
+                    <option value="Viber">
+                    <option value="WhatsApp">
+                    <option value="Other">
+                  </datalist>
+                <label id="tipracunalabel">Tip računa</label>
+                <input  class="nooutline" type="radio" id="tipracun" name="tipracuna" value="Racun">
+                <label id="tipracunlabel" class="polaa pointer" for="tipracun">Račun</label>
+                <input  class="nooutline" type="radio" id="tippredracun" name="tipracuna" value="Predracun">
+                <label id="tippredracunracunlabel" class="polab pointer" for="tippredracun">Predračun</label>
+                <span visibility="hidden" id="dots">...</span><section id="more" class="centergrid more sakrij">
+                    <label for="imebanke">Naziv banke</label>
+                    <input class="nooutline" id="imebanke" name="banka"  type="text"></input>
+                    <label for="kriterij1">Vremenski period izdavanja računa</label>
+                    <input class="nooutline" id="kriterij1" name="username"  type="text"></input>
+                    <label for="">Usluga za koju je izdan račun</label>
+                    <input class="nooutline" list="uslugazaizdat" id="usluga" name="usluga"></input>
+                    <datalist id="uslugazaizdat">
+                        <option value="SMS">
+                        <option value="Voice">
+                        <option value="Viber">
+                        <option value="WhatsApp">
+                        <option value="Other">
+                      </datalist>
+                    <label for="kriterij1">Tip računa</label>
+                    <input class="nooutline" id="kriterij1" name="username" type="text"></input>    
+                </section>
+                <button type="button" onclick="prikazivise()" class="nooutline gumb streachcenter fulla" id="myBtn">Više opcija filtriranja</button>
+                <a class="gumb halfa2" href="rezultat.html">Pretraži</a>
+            </form>
+        </section>
+    </main>
+    <script>
+        function prikazivise() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Više opcija filtriranja"; 
+            moreText.classList.add("sakrij");
+            moreText.classList.remove("pokazi");
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Manje opcija filtriranja"; 
+            moreText.classList.add("pokazi");
+            moreText.classList.remove("sakrij");
+          }
+        }
+        </script>
+
+  </body>
+
+</html>
