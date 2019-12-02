@@ -21,13 +21,14 @@
   </head>
 
   <body>
+      <div class="container">
     <header>
         
             <a id="logo" href="pretraga.html">
             <img src="img/infobip-logo.png" alt="logo"></a>
                 <h2 id="naslov">Dokument</h2> 
-                <label id="navbtn" for="navigacija"><i id="barovi" class="fas fa-bars"></i></label>
                 <input id="navigacija" type="checkbox"></input>
+                <label id="navbtn" for="navigacija"><i id="barovi" class="fas fa-bars"></i></label>
                 <nav>
                     <ul>
                       <li>
@@ -45,12 +46,59 @@
     <main>
         <section class="centergrid shadow">
             <form action="nekiprogram.php">
-                
+                <section class="singledokument">
+                  <section class="grid zaklijenta fulla">
+                  <h4 class="fulla slim paddingbottomborder">Predračun br.9875525</h4>
+                  <img class="halfa1"src="img/infobip-logo.png" alt="tvrtka">
+                  <section class="memorandum halfa2 nopadcen">
+                     <p>Infobip LLC</p> 
+                    <p>111 Town Square Place,</p>
+                    <p>Suite 830,</p>
+                     <p>Jersey City,</p>
+                       <p>NJ 07310,</p>
+                         <p> USA</p>
+                    <p>Phone: +1 833-229-4631</p> 
+                  </section>
+                </section>
+                  <section class="grid zaklijenta fulla paddingbottomborder">
+                  <h3 class="fulla">Za klijenta:</h3>
+                  <section class="memorandum halfa1 nopadcen">
+                      <p>Krusty Krab d.o.o</p> 
+                     <p>10 Ocean Avenue,</p>
+                     <p>Burger 18,</p>
+                      <p>Bikini Bottom,</p>
+                        <p>BB 299581,</p>
+                          <p>Ocean</p>
+                     <p>Phone: +1 321-119-4531</p> 
+                   </section>
+                  <img class="halfa2"src="img/krab.png" alt="tvrtka">
+                </section>
+                <section class="grid opisusluge paddingbottomborder">
+                  <h3 class="fulla">Opis usluge:</h3>
+                  <p class="fulla">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </section>
+                <section class="grid paddingbottomborder">
+                    <h3 class="fulla">Dodatne informacije:</h3>
+                    <section class="halfa1">
+                      <h4 class="dodatneinfo">Datum fiskalizacije:</h4><p>/Predračun</p>
+                      <h4 class="dodatneinfo">Banka:</h4><p>PBZ</p>
+                      <h4 class="dodatneinfo">Iznos:</h4><p>2000</p>
+                      <h4 class="dodatneinfo">Valuta:</h4><p>€(Euro)</p>
+                    </section>
+                    <section class="halfa2 desnoaligntext">
+                        <h4 class="dodatneinfo">Usluga</h4><p>WhatsApp</p>  
+                        <h4 class="dodatneinfo">Plaćeno:</h4><p>NE</p>
+                        <h4 class="dodatneinfo">Zakazana uplata za:</h4><p>8 dana</p>
+                        <h4 class="dodatneinfo">Kod klijenta:</h4><p>958535</p>
+                      </section>
+                  </section>
+                </section>
                 <a class="gumb streachcenter halfa1" id="izmijeniti" href="edit.html">Izmijeniti</a>
                 <a class="gumb streachcenter halfa2" id="exportpdf" href="#">Export u PDF</a>
             </form>
         </section>
     </main>
+  </div>
   </body>
 
 </html>

@@ -35,20 +35,22 @@
         align-content: center;
         display: grid;
         justify-content: center;}
-    #navbtn i {font-size:2em;}
+    #navbtn i {font-size:2.3em;}
     #navbtn:hover{cursor:pointer;}
     #navigacija{display:none;}
     
     nav{
         position:absolute;
         right: -300px;
+        height: 100vh;
         bottom: 0;
         top: 0;
         list-style:none;
         transition:all 0.3s;
         background-color:whitesmoke;
     }
-    
+    .container{position:relative;
+    overflow:hidden;}
     nav ul{list-style:none;
         margin-top:100px;}
     
@@ -56,7 +58,7 @@
     text-align:center;
     transition:0.3s;
     padding-bottom:10px;}
-    nav ul li a{font-size:2em;
+    nav ul li a{font-size:1.5em;
         padding:20px 0;
         text-decoration:none;
     font-weight:bold;
@@ -78,6 +80,8 @@ font-weight:bold;}
         top: 0;
         width: 16.6667%;
         z-index: 2;}
+        input#navigacija:checked + label i {transform:rotate(180deg);
+            transition:0.3s;}
     main{width:100%;
         overflow-x:hidden;
         display:grid;
@@ -94,16 +98,17 @@ font-weight:bold;}
     align-self: center;}
     .lijevifix{width:16.6667%;
         position:fixed;
-        padding:50px 0;
+        overflow-y:scroll;
+        padding:35px 0;
     top:100px;
 bottom:0;
 left:0;}
 section.lijevifix{box-shadow:none;
 border-right:4px solid #e9530e;}
 .lijevifix h3{font-size:2.3em;
-    position:absolute;
+    position:fixed;
     bottom:0;
-    width:100%;
+    width:16.667%;
 background:#e9530e;
 padding:10px 0px;
 transition:0.3s;
@@ -113,11 +118,44 @@ color:white;}
     transition:0.3s;
 background:whitesmoke;
 color:#e9530e;}
-    .desniflex{grid-column: 3/13;
+.lijevifix h4{
+    font-size:1.5em;
+    text-align:center;
+    margin:20px 0 5px 0;
+}
+
+#sortbyli input{display:none;}
+#sortbyli label{background: whitesmoke;
+    color: #e9530e;
+    cursor:pointer;
+    display:block;
+    width:100%;
+    transition:0.3s;
+    padding:10px 0;
+    margin-bottom:5px;
+    text-align:center;
+font-size:1.3em;}
+#sortbyli label:hover{
+    background: rgb(214, 214, 214);
+    transition:0.3s;
+}
+#sortbyli input:checked + label {color:whitesmoke;
+transition:0.3s;
+background:#e9530e;}
+#orderbyid label.polasort, #orderby label.polasort{width:50%;
+display:inline-block;
+float:left;}
+.floatlsto{width:100%;
+float:left;}
+#orderby label.fullsort{width:100%;
+    margin-bottom:50px;
+    display:inline-block;
+    float:left;}
+    .desniflex{grid-column:span 12;
         display: flex;
         flex-wrap:wrap;
         grid-template-columns: repeat(12,1fr);
-        padding:50px 0;
+        padding:50px 0 0 16%;
         justify-content: center;
     min-height:90vh;}
     .desniflex a{text-decoration:none;}
@@ -161,7 +199,7 @@ color:#e9530e;}
         justify-content:center;
         align-items:center;
 }
-    .centergrid h3{grid-column: span 12;
+    .centergrid h3{
         font-size: 2.5em;
         text-align: center;
         padding-bottom:50px;}
@@ -181,10 +219,12 @@ color:#e9530e;}
         margin:20px;
     text-align: center;
     color:#e9530e;
-    font-size:2.2em;
+    font-size:1.5em;
     background:transparent;
     border:none;
     border-bottom:3px solid #e9530e;}
+    option{background:whitesmoke!important;
+    }
     .gumb { display: block;
         justify-self: end;
         margin: 20px;
@@ -197,11 +237,26 @@ color:#e9530e;}
         padding: 10px 30px;}
     .streachcenter{justify-self: stretch;
     text-align:center;}
-    .fulla{grid-column:3/11;}
+    .fulla{grid-column:3/11;
+    text-align:center;}
+    .slim{font-weight:100;}
+    .dodatneinfo{padding:20px 0 0 0;}
     .halfa1{grid-column: 3/7;}
     .halfa2{grid-column:7/11;}
+    .grid{display: grid;
+        grid-template-columns: repeat(12,1fr);
+    grid-column:span 12;}
+.nopadcen{padding:0;
+    align-self:center;}
+    .zaklijenta{align-items: center;}
     .halfa2-1{grid-column:6/10;}
     #izmijeni{grid-column:3/7;}
+    .singledokument img{width:100%;
+    align-self:center;}
+    .opisusluge p{font-size:1.2em;}
+    .memorandum{text-align: right;
+        font-size: 1.4em;}
+    .desnoaligntext{text-align: right;}
     .gumb:hover{
         background:#e9530e;
         color:whitesmoke;
@@ -240,11 +295,25 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: none;
   transition: background-color 5000s ease-in-out 0.3s;
 }
+::-webkit-scrollbar {
+    display: none;
+    }
 #vremenskiperiodlabel,#tipracunalabel{grid-column:3/11;
     text-align: center;}
+    #tipplacen ~ #tipplacenlabel {
+        color: grey;
+        background:whitesmoke;
+        transition:0.3s;
+      }
+      #tipneplacen ~ #tipneplacenlabel {
+        color: grey;
+        background:whitesmoke;
+        transition:0.3s;
+      }
     .pointer{cursor:pointer;}
     #tipracun ~ #tipracunlabel {
         color: grey;
+        background:whitesmoke;
         transition:0.3s;
       }
     #tipracun:checked ~ #tipracunlabel {
@@ -253,11 +322,40 @@ select:-webkit-autofill:focus {
         transition:0.3s;
         background:whitesmoke;
       }
+      #tipplacen:checked ~ #tipplacenlabel {
+        color: #e9530e;
+        font-weight:bold;
+        transition:0.3s;
+        background:whitesmoke;
+      }
+      #tipneplacen:checked ~ #tipneplacenlabel {
+        color: #e9530e;
+        font-weight:bold;
+        transition:0.3s;
+        background:whitesmoke;
+      }
       .oapp,.greska{background:#e9530e;}
       .oapp h3,.greska h3{padding:50px;
     color:whitesmoke;}
+    #duein{    grid-column: 7/11;
+        color: #e9530e;
+        padding: 10px;
+    margin: 20px;
+        background: transparent;
+        border: none;
+        border-bottom: 3px solid #e9530e;
+        font-size: 1.5em;
+        outline: none;
+        text-align: center;
+        box-shadow: none;}
       #tippredracun ~ #tippredracunracunlabel {
         color: grey;
+        background:whitesmoke;
+        transition:0.3s;
+      }
+      #tippredracun ~ #tippredracunracunlabel:hover, {
+        color: grey;
+        background:whitesmoke;
         transition:0.3s;
       }
     #tippredracun:checked ~ #tippredracunracunlabel {
@@ -270,7 +368,7 @@ select:-webkit-autofill:focus {
     text-align:center;}
     label.polab{grid-column:7/11;
         text-align:center;}
-    #tipracun,#tippredracun{display:none;}
+    #tipracun,#tippredracun,#tipplacen,#tipneplacen{display:none;}
 .more{padding:0;
     grid-column: span 12;
     grid-template-columns: repeat(12,1fr);
@@ -282,3 +380,11 @@ select:-webkit-autofill:focus {
     transition: max-height 1s;
     overflow: hidden;
 }
+
+.singledokument{display:grid;
+grid-column: span 12;
+grid-template-columns: repeat(12, 1fr);}
+.singledokument h4{font-size:2em;}
+.paddingbottomborder{border-bottom: 2px solid #e9530e;
+    padding: 50px 0;}
+.zaklijenta section.halfa1{text-align:left;}

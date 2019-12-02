@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="hr">
-
   <head>
 	<meta name="theme-color" content="#000000">
 	<meta name="msapplication-navbutton-color" content="#000000">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Web za zadatak">
     <meta name="author" content="Dominik Mustać">
 	<link rel="shortcut icon" type="favicon" href="favicon.ico"/>
@@ -21,13 +20,14 @@
   </head>
 
   <body>
+    <div class="container">
     <header>
-        
-            <a id="logo" href="pretraga.html">
+           
+        <a id="logo" href="pretraga.html">
             <img src="img/infobip-logo.png" alt="logo"></a>
-                <h2 id="naslov">Pronađeni dokumenti</h2> 
-                <label id="navbtn" for="navigacija"><i id="barovi" class="fas fa-bars"></i></label>
+                <h2 id="naslov">Rezultat pretrage</h2> 
                 <input id="navigacija" type="checkbox"></input>
+                <label id="navbtn" for="navigacija"><i id="barovi" class="fas fa-bars"></i></label>
                 <nav>
                     <ul>
                       <li>
@@ -40,10 +40,45 @@
                             Ver. 0.01
                     </li>
                     </ul>
-            </nav>           
+            </nav>    
     </header>
     <main>
-      <section class="lijevifix shadow">
+      <section class="lijevifix">
+          <h4>Sortiraj po:</h4>
+        <section id="sortbyli"> 
+              <input  class="nooutline" type="radio" id="sortbydate" name="sortby" value="date">
+              <label id="sortbydatelabel" class="polaa pointer" for="sortbydate">Datumu</label>
+              <input  class="nooutline" type="radio" id="sortbyservice" name="sortby" value="date">
+              <label id="sortbydatelabel" class="polaa pointer" for="sortbyservice">Usluzi</label>
+              <input  class="nooutline" type="radio" id="sortbyclient" name="sortby" value="date">
+              <label id="sortbydatelabel" class="polaa pointer" for="sortbyclient">Nazivu klijenta</label>
+              <input  class="nooutline" type="radio" id="sortbycompany" name="sortby" value="date">
+              <label id="sortbydatelabel" class="polaa pointer" for="sortbycompany">Nazivu firme</label>
+              <input  class="nooutline" type="radio" id="sortbystatus" name="sortby" value="date">
+              <label id="sortbydatelabel" class="polaa pointer" for="sortbystatus">Statusu plačanja</label>
+            <section class="floatlsto" id="orderbyid">
+              <h4 class="floatlsto">Način sortiranja:</h4>
+              <input  class="nooutline" type="radio" id="silazno" name="order" value="date">
+              <label  class="polaa pointer polasort" for="silazno">Silazno</label>
+              <input  class="nooutline" type="radio" id="uzlazno" name="order" value="date">
+              <label  class="polaa pointer polasort" for="uzlazno">Uzlazno</label>
+            </section>
+              <h4 class="floatlsto" >Broj prikazanih dokumenata:</h4>
+            <section class="floatlsto" id="orderby">
+                <input  class="nooutline" type="radio" id="dp" name="orderby" value="date">
+                <label  class="polaa pointer polasort" for="dp">25</label>
+                <input  class="nooutline" type="radio" id="pd" name="orderby" value="date">
+                <label  class="polaa pointer polasort" for="pd">50</label>
+                <input  class="nooutline" type="radio" id="sto" name="orderby" value="date">
+                <label  class="polaa pointer polasort" for="sto">100</label>
+                <input  class="nooutline" type="radio" id="dsto" name="orderby" value="date">
+                <label  class="polaa pointer polasort" for="dsto">200</label>
+                <input  class="nooutline" type="radio" id="sve" name="orderby" value="date">
+                <label  class="polaa pointer fullsort" for="sve">Svi</label>
+            </section>
+          
+        </section>
+        
         <a href="#"><h3>Apply</h3></a>
 
       </section>
@@ -184,6 +219,7 @@
                                   </article>
                                 </a>
     </main>
+  </div>
   </body>
 
 </html>
