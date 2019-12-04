@@ -272,7 +272,8 @@ float:left;}
             padding: 10px 30px;}
     .slim{font-weight:100;}
     .paddingbottomborder{border-bottom: 2px solid #e9530e;
-        padding: 50px 0;}
+        padding:0 0 50px 0;}
+    .paddingtop{padding-top:50px;}
     .dodatneinfo{padding:20px 0 0 0;}
     .nopadcen{padding:0;
              align-self:center;}
