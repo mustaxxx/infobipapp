@@ -261,6 +261,11 @@ float:left;}
         background: #fffffff2;}
     option{background:whitesmoke!important;
         }
+      #editscreen p{padding:0 0 5px 0;
+        border-bottom: 1px solid grey;
+     }
+     #editscreen section.halfa1{padding-right:40px;}
+     #editscreen section.halfa2{padding-left:40px;}
     .gumb { display: block;
             margin:20px 3px;
             font-family: 'Montserrat', sans-serif;
