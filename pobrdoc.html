@@ -21,6 +21,12 @@
   </head>
 
   <body>
+      <div class="loader"><div id="circle_square">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+      </div></div>
       <div class="container">
     <header>
            
@@ -54,6 +60,12 @@
       </section>
     </main>
   </div>
+  <script>
+      window.addEventListener("load", function () {
+      const loader = document.querySelector(".loader");
+      loader.className += " hidden"; // class "loader hidden"
+      });
+    </script>
   </body>
 
 </html>
