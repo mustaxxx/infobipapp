@@ -420,7 +420,7 @@ z-index:99;
 background:whitesmoke;}
 
 .loader.hidden{
-  animation: fadeOut 1s;
+  animation: fadeOut 1.5s;
   animation-fill-mode: forwards;
 }
 
@@ -428,6 +428,9 @@ background:whitesmoke;}
   100% {
     opacity:0;
     visibility:hidden;
+  }
+  50%{
+    opacity:100%;
   }
 }
 
